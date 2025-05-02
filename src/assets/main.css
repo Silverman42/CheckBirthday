@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Nova Klasse';
+  src: url('./fonts/nova-klasse-font/novaklasse-semibold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Nova Klasse';
+  src: url('./fonts/nova-klasse-font/novaklasse-semibold-italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Peach Cherry';
+  src: url('./fonts/peach-chery.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@theme {
+  --font-primary: 'Wix Madefor Display', sans-serif;
+  --font-secondary: 'Nova Klasse', sans-serif;
+  --font-cherry: 'Peach Cherry', sans-serif;
+}
+
+*{
+  @apply transition-all duration-300 ease-in-out
+}

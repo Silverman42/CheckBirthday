@@ -1,0 +1,134 @@
+
+.unhide-heading-anime span {
+  animation: unhide-heading 0.5s ease-in-out forwards;
+  animation-play-state: paused;
+  transform: translateY(8rem);
+  opacity: 0;
+}
+
+.unhide-heading-anime:nth-child(n) span {
+  animation-delay: var(--delay);
+}
+@keyframes unhide-heading {
+  0% {
+    transform: translateY(8rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-0.4rem);
+    opacity: 1;
+  }
+}
+
+.unhide-bottom-anime span {
+  animation: unhide-bottom 0.5s ease-in-out forwards;
+  animation-play-state: paused;
+  transform: translateY(8rem);
+  opacity: 0;
+}
+
+.unhide-bottom-anime:nth-child(n) span {
+  animation-delay: var(--delay);
+}
+
+@keyframes unhide-bottom {
+  0% {
+    transform: translateY(8rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+.unhide-top-anime {
+  animation: unhide-top 0.5s ease-in-out forwards;
+  animation-play-state: paused;
+  transform: translateY(-8rem);
+  opacity: 0;
+}
+.unhide-top-anime:nth-child(n) {
+  animation-delay: var(--delay);
+}
+
+@keyframes unhide-top {
+  0% {
+    transform: translateY(-8rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+.pop-anime {
+  animation: pop-anime 0.5s ease-in-out forwards;
+  animation-play-state: paused;
+  opacity: 0;
+}
+.pop-anime:nth-child(n) {
+  animation-delay: var(--delay);
+}
+
+@keyframes pop-anime {
+  0% {
+    transform: scale(0.3) translateY(6rem);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0rem);
+    opacity: 1;
+  }
+}
+
+.unhide-left-anime {
+  animation: unhide-left-anime 0.5s ease-in-out forwards;
+  animation-play-state: paused;
+  animation-delay: var(--delay);
+  opacity: 0;
+}
+
+@keyframes unhide-left-anime {
+  0% {
+    transform: translateX(-4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+.unhide-right-anime {
+  animation: unhide-right-anime 0.5s ease-in-out forwards;
+  animation-play-state: paused;
+  animation-delay: var(--delay);
+  opacity: 0;
+}
+
+@keyframes unhide-right-anime {
+  0% {
+    transform: translateX(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .unhide-bottom-anime {
+    animation: none;
+  }
+
+  .unhide-top-anime {
+    animation: none;
+  }
+
+  .pop-anime {
+    animation: none;
+  }
+}

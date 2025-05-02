@@ -1,0 +1,45 @@
+export interface ListData {
+  id: string
+  name: string
+  data?: any
+}
+
+export const States: ListData[] = [
+  { id: 'abia', name: 'Abia' },
+  { id: 'adamawa', name: 'Adamawa' },
+  { id: 'akwa-ibom', name: 'Akwa Ibom' },
+  { id: 'anambra', name: 'Anambra' },
+  { id: 'bauchi', name: 'Bauchi' },
+  { id: 'bayelsa', name: 'Bayelsa' },
+  { id: 'benue', name: 'Benue' },
+  { id: 'borno', name: 'Borno' },
+  { id: 'cross-river', name: 'Cross River' },
+  { id: 'delta', name: 'Delta' },
+  { id: 'ebonyi', name: 'Ebonyi' },
+  { id: 'edo', name: 'Edo' },
+  { id: 'ekiti', name: 'Ekiti' },
+  { id: 'enugu', name: 'Enugu' },
+  { id: 'gombe', name: 'Gombe' },
+  { id: 'imo', name: 'Imo' },
+  { id: 'jigawa', name: 'Jigawa' },
+  { id: 'kaduna', name: 'Kaduna' },
+  { id: 'kano', name: 'Kano' },
+  { id: 'katsina', name: 'Katsina' },
+  { id: 'kebbi', name: 'Kebbi' },
+  { id: 'kogi', name: 'Kogi' },
+  { id: 'kwara', name: 'Kwara' },
+  { id: 'lagos', name: 'Lagos' },
+  { id: 'nasarawa', name: 'Nasarawa' },
+  { id: 'niger', name: 'Niger' },
+  { id: 'ogun', name: 'Ogun' },
+  { id: 'ondo', name: 'Ondo' },
+  { id: 'osun', name: 'Osun' },
+  { id: 'oyo', name: 'Oyo' },
+  { id: 'plateau', name: 'Plateau' },
+  { id: 'rivers', name: 'Rivers' },
+  { id: 'sokoto', name: 'Sokoto' },
+  { id: 'taraba', name: 'Taraba' },
+  { id: 'yobe', name: 'Yobe' },
+  { id: 'zamfara', name: 'Zamfara' },
+  { id: 'federal-capital-territory', name: 'Federal Capital Territory' },
+]
