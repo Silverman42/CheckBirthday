@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import IconClose2 from '../icons/IconClose2.vue'
 
 const modalProps = withDefaults(defineProps<{ level?: number }>(), {
   level: 1,
@@ -39,14 +40,21 @@ defineExpose({
   <transition name="slideUpModal">
     <div
       v-if="modalIsOpen"
-      class="w-full md:w-[40rem] left-[50%] translate-x-[-50%] fixed bottom-[50%] translate-y-[50%] max-h-[90vh] rounded-3xl bg-white p-2 bg-gradient-to-t border border-slate-100 from-slate-200 to-slate-50"
+      class="w-full md:w-[40rem] left-[50%] translate-x-[-50%] fixed bottom-0 md:bottom-[50%] md:translate-y-[50%] max-h-[90vh] rounded-t-3xl md:rounded-3xl bg-white pb-0 p-1 md:pb-1 bg-gradient-to-t border border-slate-100 from-slate-200 to-slate-50"
       :style="{
         zIndex: modalProps.level * 261,
       }"
     >
-      <div class="w-full h-full bg-white rounded-[19px] border-2 border-slate-200">
+      <div
+        class="w-full h-full bg-white rounded-t-[19px] md:rounded-[19px] border-2 border-slate-200"
+      >
         <div class="max-w-7xl mx-auto flex flex-col h-full">
-          <div class="w-full flex-grow overflow-y-auto px-6 -mt-5">
+          <div class="flex justify-end p-5">
+            <button @click="closeModal" class="cursor-pointer">
+              <IconClose2 :size="32"></IconClose2>
+            </button>
+          </div>
+          <div class="w-full flex-grow overflow-y-auto p-5 pt-0">
             <slot></slot>
           </div>
         </div>

@@ -1,5 +1,16 @@
+<script setup lang="ts">
+const props = withDefaults(defineProps<{ size?: number }>(), {
+  size: 32,
+})
+</script>
 <template>
-  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    :width="props.size"
+    :height="props.size"
+    viewBox="0 0 44 45"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <rect y="0.5" width="44" height="44" rx="22" fill="#F3F4F7" />
     <path
       d="M16.8118 29.0635C16.4635 29.0635 16.1152 28.9352 15.8402 28.6602C15.3085 28.1285 15.3085 27.2485 15.8402 26.7168L26.2168 16.3402C26.7485 15.8085 27.6285 15.8085 28.1602 16.3402C28.6918 16.8718 28.6918 17.7518 28.1602 18.2835L17.7835 28.6602C17.5268 28.9352 17.1602 29.0635 16.8118 29.0635Z"
