@@ -2,6 +2,14 @@
 import { RouterLink, RouterView } from 'vue-router'
 import LayoutHeader from '@/components/Layout/Header.vue'
 import LayoutFooter from '@/components/Layout/Footer.vue'
+import { useGSAP } from './assets/compositions/useGsap'
+import { onMounted } from 'vue'
+
+const { resgisterPlugins } = useGSAP()
+
+onMounted(() => {
+  resgisterPlugins()
+})
 </script>
 
 <template>
