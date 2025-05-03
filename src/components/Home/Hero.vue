@@ -82,7 +82,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <section class="relative min-h-[140vh]">
+  <section class="relative min-h-[140vh] overflow-hidden">
     <img
       src="/img/hero-img.png"
       class="w-full absolute left-0 top-0 z-[1] h-full object-cover object-center"

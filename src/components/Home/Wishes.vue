@@ -135,12 +135,13 @@ onMounted(() => {
           </div>
         </div>
 
-        <button
+        <a
+          href="/wishes"
           class="rounded-[16px] border border-[#258C83] text-[#258C83] text-sm md:text-base px-[18px] whitespace-nowrap py-[12px] md:py-[20px] md:px-[35px] md:mb-5"
           id="wishes_cta"
         >
           See all
-        </button>
+        </a>
       </div>
     </div>
 

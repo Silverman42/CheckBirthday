@@ -93,7 +93,7 @@ onMounted(() => {
 })
 </script>
 <template>
-  <section class="my-24 mx-5" id="meet_chuks_container">
+  <section class="my-24 mx-5" id="meet_chuks_container overflow-hidden">
     <div class="max-w-[1058px] mx-auto flex gap-10 md:gap-20 flex-col md:flex-row w-full">
       <h2
         class="w-[266px] font-cherry text-[#0B3834] text-4xl md:text-[75px] shrink-0"
